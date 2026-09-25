@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conatainer">
+    <div class="container">
         <div class="title">
             <h3>Rock Paper Scissor</h3>
         </div>
-        <div class="container">
+        <div class="main">
             <h4>Choose your weapon</h4>
             <div class="rock">
-                <button id = "rock">rock</button>
-                <p>rock</p>
+                <button id = "rock"> 🪨 rock</button>
+                
             </div>
             <div class="paper">
                 <button id = "paper">paper</button>
-                <p>paper</p>
+               
             </div>
             <div class="scissor">
                 <button id = "scissor">scissor</button>
-                <p>scissor</p>
-            </div>                        
+                
+            </div>  
+            <div class="resultBox">
+                <div class="result" id="result">
+                    <p id="winnigScore">You Win</p>
+                    <p id="computerScore">Computer Wins</p>
+                </div>
+                <div class="storage">
+                    <p>Won: </p>
+                    <p>Lost: </p>
+                    <p>Draw: </p>
+                </div>
+                <div class="retry" id="retry">
+                    <p id = "choose">retry</p>
+                    <p id="exit">exit</p>
+                </div>
+            </div>                      
         </div>
     </div>
 </body>
