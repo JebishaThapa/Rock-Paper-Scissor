@@ -1,20 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
-body{
-    width:100%;
-    height:100vh;
-    
 
+body {
+  background-color: #0f141d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.container{
-    background: #E1DCC9;
-    color:#1d1408;
-    height:100vh;
-    width:100%;
-    padding:50px;
 
+/* Outer box container */
+.container {
+  background-color: #161c26;
+  border: 1px solid #232a36;
+  border-radius: 16px;
+  padding: 35px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Title section */
+.title h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Default state for screens */
+.screen2,
+.screen3 {
+  display: none;
+}
+
+/* SCREEN 1: Weapon selection */
+.screen1 h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9aa5b5;
+  margin-bottom: 25px;
+}
+
+/* Weapons layout */
+.weapons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.weapons button {
+  background: transparent;
+  border: none;
+  color: #8c97a8;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.weapons button:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Scoreboard styling with vertical dividers */
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #232a36;
+  padding-top: 25px;
+}
+
+.scoreboard p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  flex: 1;
+}
+
+.scoreboard p:not(:last-child) {
+  border-right: 1px solid #2e3746;
+}
+
+.scoreboard span {
+  font-weight: 700;
+}
+
+/* SCREEN 2: Game play / Result screen */
+.screen2 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen2 p#playerChoice,
+.screen2 p#computerChoice {
+  font-size: 15px;
+  color: #9aa5b5;
+  margin-bottom: 10px;
+}
+
+.screen2 p#resultText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 20px 0 25px 0;
+}
+
+/* Buttons in Screen 2 & 3 */
+.screen2 button,
+.screen3 button {
+  background-color: #232a36;
+  color: #ffffff;
+  border: 1px solid #2e3746;
+  padding: 10px 24px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.screen2 button:hover,
+.screen3 button:hover {
+  background-color: #2e3746;
+}
+
+/* SCREEN 3: Game Over screen */
+.screen3 h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.screen3 p {
+  font-size: 15px;
+  color: #9aa5b5;
+  margin-bottom: 10px;
 }
