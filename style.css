@@ -1,4 +1,4 @@
-/* Reset and global styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-/* Outer box container */
+
 .container {
   background-color: #161c26;
   border: 1px solid #232a36;
@@ -27,7 +27,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Title section */
+
 .title h3 {
   font-size: 24px;
   font-weight: 600;
@@ -35,13 +35,12 @@ body {
   color: #ffffff;
 }
 
-/* Default state for screens */
+
 .screen2,
 .screen3 {
   display: none;
 }
 
-/* SCREEN 1: Weapon selection */
 .screen1 h4 {
   font-size: 16px;
   font-weight: 400;
@@ -49,7 +48,7 @@ body {
   margin-bottom: 25px;
 }
 
-/* Weapons layout */
+
 .weapons {
   display: flex;
   justify-content: center;
@@ -74,10 +73,10 @@ body {
 
 .weapons button:hover {
   color: #ffffff;
-  transform: translateY(-3px);
+  transform: translateY(3px);
 }
 
-/* Scoreboard styling with vertical dividers */
+
 .scoreboard {
   display: flex;
   justify-content: space-between;
@@ -101,7 +100,7 @@ body {
   font-weight: 700;
 }
 
-/* SCREEN 2: Game play / Result screen */
+
 .screen2 {
   flex-direction: column;
   align-items: center;
