@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,36 +12,41 @@
         <div class="title">
             <h3>Rock Paper Scissor</h3>
         </div>
-        <div class="main">
+    
+        <!--screen 1-->
+        <div class="screen1" id="screen1">
             <h4>Choose your weapon</h4>
-            <div class="rock">
-                <button id = "rock"> 🪨 rock</button>
-                
+            <div class="weapons">
+                <button id="rock">🪨 Rock</button>
+                <button id="paper">📄 Paper</button>
+                <button id="scissor">✂️ Scissor </button>
             </div>
-            <div class="paper">
-                <button id = "paper">paper</button>
-               
+            <div class="scoreboard">
+                <p>Won: <span id="wonScore">0 </span></p>
+                <p>Lost: <span id="lostScore">0 </span></p>
+                <p>Draw: <span id="drawScore">0 </span></p>
             </div>
-            <div class="scissor">
-                <button id = "scissor">scissor</button>
-                
-            </div>  
-            <div class="resultBox">
-                <div class="result" id="result">
-                    <p id="winnigScore">You Win</p>
-                    <p id="computerScore">Computer Wins</p>
-                </div>
-                <div class="storage">
-                    <p>Won: </p>
-                    <p>Lost: </p>
-                    <p>Draw: </p>
-                </div>
-                <div class="retry" id="retry">
-                    <p id = "choose">retry</p>
-                    <p id="exit">exit</p>
-                </div>
-            </div>                      
         </div>
+
+        <!---screen 2-->
+        <div class="screen2" id="screen2">
+            <p id="playerChoice">You chose: </p>
+            <p id="computerChoice">Computer chose: </p>
+            <p id="resultText"></p>
+            <button id="retry">Retry</button>
+            <button id="exit">Exit</button>
+        </div>
+
+        <!--screen 3-->
+        <div class="screen3" id="screen3">
+            <h4>Game Over</h4>
+            <p>Matches Won: <span id="finalWon"></span></p>
+            <p>Matches Lost: <span id="finalLost"></span></p>
+            <p>Matches Draw: <span id="finalDraw"></span></p>
+        </div>
+            
+        
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
