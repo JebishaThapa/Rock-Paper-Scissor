@@ -5,7 +5,7 @@ let draw = 0;
 
 const choices = ["rock", "paper", "scissor"];
 
-// DOM Element Selectors
+
 const screen1 = document.getElementById("screen1");
 const screen2 = document.getElementById("screen2");
 const screen3 = document.getElementById("screen3");
@@ -89,12 +89,12 @@ function handleRetry() {
 
 
 function handleExit() {
-    // Set screen 3 text using current scores
+    
     finalWon.textContent = won;
     finalLost.textContent = lost;
     finalDraw.textContent = draw;
 
-    // Switch Screens (Hide Screen 2, Show Screen 3)
+    
     screen2.style.display = "none";
     screen3.style.display = "block";
 }

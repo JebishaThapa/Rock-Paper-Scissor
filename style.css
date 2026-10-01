@@ -120,7 +120,7 @@ body {
   margin: 20px 0 25px 0;
 }
 
-/* Buttons in Screen 2 & 3 */
+
 .screen2 button,
 .screen3 button {
   background-color: #232a36;
@@ -139,7 +139,6 @@ body {
   background-color: #2e3746;
 }
 
-/* SCREEN 3: Game Over screen */
 .screen3 h4 {
   font-size: 20px;
   margin-bottom: 20px;
